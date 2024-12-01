@@ -14,6 +14,6 @@ export const p1 = (input: string): number => {
 
 	return zip(left, right)
 		.map(([l, r]) => Math.abs(l - r))
-		.sum()
+		.sum();
 };
 await task(p1, packageJson.aoc); // 1722302 ~16.04ms

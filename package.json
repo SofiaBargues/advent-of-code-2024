@@ -72,14 +72,13 @@
 		"release:major": "commit-and-tag-version --sign --commit-all --release-as major",
 		"release:minor": "commit-and-tag-version --sign --commit-all --release-as minor",
 		"release:patch": "commit-and-tag-version --sign --commit-all --release-as patch",
-		"setup-all": "setup-prettier && setup-editorconfig && setup-husky && setup-git && setup-commitlint && setup-eslint && setup-github && setup-ts && setup-remark && setup-standard-version && setup-stylelint && setup-depcheck && setup-turbo && setup-vite && setup-vitest && setup-workspace",
+		"setup-all": "setup-prettier && setup-editorconfig && setup-husky && setup-git && setup-eslint && setup-github && setup-ts && setup-remark && setup-standard-version && setup-stylelint && setup-depcheck && setup-turbo && setup-vite && setup-vitest && setup-workspace",
 		"start": "turbo run start --concurrency 6",
 		"test": "turbo run test_ --concurrency 16 --cache-dir .cache/turbo && merge-workspace-lcov-reports && lcov-viewer lcov -o ./coverage ./coverage/lcov.info",
 		"typedoc": "turbo run typedoc_ --concurrency 16 --cache-dir .cache/turbo",
 		"typedoc_": "typedoc"
 	},
 	"devDependencies": {
-		"@alexaegis/autotool-plugin-commitlint": "^0.12.0",
 		"@alexaegis/autotool-plugin-depcheck": "^0.12.0",
 		"@alexaegis/autotool-plugin-editorconfig": "^0.12.0",
 		"@alexaegis/autotool-plugin-eslint": "^0.12.0",
@@ -111,7 +110,6 @@
 		"@vitest/coverage-v8": "^2.1.6",
 		"autotool": "^0.6.1",
 		"commit-and-tag-version": "^12.5.0",
-		"commitlint": "^19.6.0",
 		"depcheck": "^1.4.7",
 		"eslint": "^9.16.0",
 		"husky": "^9.1.7",
